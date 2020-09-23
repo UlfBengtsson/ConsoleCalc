@@ -1,7 +1,7 @@
 ﻿using System;
 
 namespace ConsoleCalc {
-    class Program {
+    public class Program {
         static void Main (string[] args) {
             Console.WriteLine ("Welcome to Console Calc");
 
@@ -43,19 +43,19 @@ namespace ConsoleCalc {
             } while (keepLooping);
         }
 
-        static double Addition (double numA, double numB) {
+        public static double Addition (double numA, double numB) {
             return numA + numB;
         }
 
-        static double Subtraction (double numA, double numB) {
+        public static double Subtraction (double numA, double numB) {
             return numA - numB;
         }
 
-        static double Multiplactation (double numA, double numB) {
+        public static double Multiplactation (double numA, double numB) {
             return numA * numB;
         }
 
-        static double Divison (double numA, double numB) {
+        public static double Divison (double numA, double numB) {
             if (numA == 0 || numB == 0) {
                 Console.WriteLine ("This calculator dose not divide with Zero numbers.\nResult will be shown as 0.");
                 return 0;
